@@ -1,0 +1,181 @@
+
+
+#calc-cont {
+    margin: auto;
+    background-color: grey;
+    width: 25em;
+    height: 40em;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: [border-top] 10% [screen] 20% [main] 50% [result] 10% [border-bot] 10%;
+    grid-template-columns: [border-left] 10% [numbers] 50% [operators] 30% [border-right] 10%;
+}
+
+#screen {
+    grid-column-start: numbers;
+    grid-column-end: border-right;
+    grid-row-start: screen;
+    grid-row-end: main;
+    text-align: center;
+    justify-self: stretch;
+    align-self: center;
+    border: 2px solid black;
+    height: 5em;
+    background-color: azure;
+
+}
+
+#op-cont {
+    grid-column-start: operators;
+    grid-column-end: border-right;
+    grid-row-start: main;
+    grid-row-end: border-bot;
+    display: flex;       
+    justify-content: space-around;
+    align-content: center;
+    background-color: aqua;
+    border: 2px solid black;
+    text-align: center;   
+    
+}
+
+
+#add {
+    width: 40%;
+    height: 15%;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+#sub {
+    width: 40%;
+    height: 15%;
+    background-color: beige;
+    border: 1px solid black;
+
+}
+
+#multi {
+    width: 40%;
+    height: 15%;
+    background-color: beige;
+    border: 1px solid black;
+   
+}
+
+#divide {
+    width: 40%;
+    height: 15%;
+    background-color: beige;
+    border: 1px solid black;
+    
+    
+}
+
+#num-cont {
+    grid-column-start: numbers;
+    grid-column-end: operators;
+    grid-row-start: main;
+    grid-row-end: result;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    border: 2px solid black;
+    
+    
+}
+
+#one {
+    width: 30%;
+    height: 21%;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+#two {
+    width: 30%;
+    height: 21%;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+#three {
+    width: 30%;
+    height: 21%;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+#four {
+    width: 30%;
+    height: 21%;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+#five {
+    width: 30%;
+    height: 21%;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+#six {
+    width: 30%;
+    height: 21%;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+#seven {
+    width: 30%;
+    height: 21%;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+#eight {
+    width: 30%;
+    height: 21%;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+#nine {
+    width: 30%;
+    height: 21%;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+#zero {
+    width: 30%;
+    height: 21%;
+    justify-self: flex-end;
+    background-color: beige;
+    border: 1px solid black;
+
+}
+
+#delete {
+    width: 30%;
+    height: 21%;
+    justify-self: flex-end;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+#result {
+    width: 85%;
+    height: 15%;
+    align-self: felx-end;
+    border: 2px solid black;
+    text-align: center;
+    background-color: burlywood;
+
+}
+
+h1 {
+    align-self: center;
+    text-align: center;
+}

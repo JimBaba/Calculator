@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<header>
+    <h1>Calculator</h1>
+</header>
+
+<body>
+    <div id="calc-cont">
+        <div id="screen">
+            <p id="screenText"></p>
+        </div>
+        <div id="num-cont">
+            <div id="numbers">
+                <button id="one" onclick="drawOnScreen(this.innerText)">1</button>
+                <button id="two" onclick="drawOnScreen(this.innerText)">2</button>
+                <button id="three" onclick="drawOnScreen(this.innerText)">3</button>
+                <button id="four" onclick="drawOnScreen(this.innerText)">4</button>
+                <button id="five" onclick="drawOnScreen(this.innerText)">5</button>
+                <button id="six" onclick="drawOnScreen(this.innerText)">6</button>
+                <button id="seven" onclick="drawOnScreen(this.innerText)">7</button>
+                <button id="eight" onclick="drawOnScreen(this.innerText)">8</button>
+                <button id="nine" onclick="drawOnScreen(this.innerText)">9</button>
+                <button id="delete" onclick="reset()">Del</button>
+                <button id="zero" onclick="drawOnScreen(this.innerText)">0</button>
+            </div>
+        </div>
+        <div id="op-cont">
+            <div id="operators">
+                <button id="add" onclick="drawOnScreen(this.innerText)">+  </button>
+                <button id="sub" onclick="drawOnScreen(this.innerText)"> - </button>
+                <button id="multi" onclick="drawOnScreen(this.innerText)"> * </button>
+                <button id="divide" onclick="drawOnScreen(this.innerText)"> / </button>
+                <button id="result" onclick="operate(screen)">=</button>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <script src="scripts.js"></script>
+</footer>
